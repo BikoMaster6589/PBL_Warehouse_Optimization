@@ -190,6 +190,42 @@ app.get("/product", async (req, res) => {
 // --------------------------------------------------------
 
 
+function knapsack01(items, capacity) {
+  const n = items.length;
+  const dp = Array.from({ length: n + 1 }, () => Array(capacity + 1).fill(0));
+
+  const weights = items.map(item => item.size * item.quant);
+  const values = items.map(item => {
+    if (item.priority === 'High') return 2;
+    if (item.priority === 'Medium') return 1;
+    return 0;
+  });
+
+  for (let i = 1; i <= n; i++) {
+    for (let w = 0; w <= capacity; w++) {
+      if (weights[i - 1] <= w) {
+        dp[i][w] = Math.max(
+          values[i - 1] + dp[i - 1][w - weights[i - 1]],
+          dp[i - 1][w]
+        );
+      } else {
+        dp[i][w] = dp[i - 1][w];
+      }
+    }
+  }
+
+  const selected = [];
+  let w = capacity;
+  for (let i = n; i > 0; i--) {
+    if (dp[i][w] !== dp[i - 1][w]) {
+      selected.push(items[i - 1]);
+      w -= weights[i - 1];
+    }
+  }
+
+  return selected;
+}
+
 
 
 const {} = app.listen(3000, () => {
