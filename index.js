@@ -25,16 +25,15 @@ app.use(
   })
 );
 
+const db = new pg.Client({
+  user: "postgres",
+  host: "localhost",
+  database: "Warehouse_Db",
+  password: "mohan",
+  port: 5432,
+});
 
-
-
-
-
-
-
-
-
-
+db.connect();
 
 const transporter = nodemailer.createTransport({
   service: "gmail",
