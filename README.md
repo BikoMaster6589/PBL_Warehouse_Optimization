@@ -1,3 +1,5 @@
+
+
 # 📦 Warehouse Optimization System
 
 An intelligent, web-based system designed to optimize warehouse storage using the **0/1 Knapsack Algorithm** and **hashing techniques** for efficient product placement and retrieval. Built with **Node.js, Express, PostgreSQL, and EJS**, this platform ensures maximum space utilization and fast inventory access.
