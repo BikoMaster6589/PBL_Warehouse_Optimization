@@ -55,10 +55,12 @@ An intelligent, web-based system designed to optimize warehouse storage using th
 
 ---
 
-## 📸 Screenshots (Optional)
-> Add images here like login screen, warehouse view, and product placement UI  
+## 📸 Screenshots  
 > Example:
-> ![Warehouse Dashboard](./screenshots/signup.png);
+> ![Warehouse Signup Page](./screenshots/signup.png);
+> ![Warehouse Signup Page](./screenshots/home.png);
+> ![Warehouse Signup Page](./screenshots/managingInv.png);
+> ![Warehouse Signup Page](./screenshots/warehouse.png);
 
 
 
