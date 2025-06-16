@@ -58,6 +58,7 @@ An intelligent, web-based system designed to optimize warehouse storage using th
 ## 📸 Screenshots  
 > Example:
 > ![Warehouse Signup Page](./screenshots/signup.png);
+> ![Warehouse Signup Page](./screenshots/otp.png);
 > ![Warehouse Signup Page](./screenshots/home.png);
 > ![Warehouse Signup Page](./screenshots/managingInv.png);
 > ![Warehouse Signup Page](./screenshots/warehouse.png);
