@@ -267,11 +267,11 @@ app.post("/retrieve-product", async (req, res) => {
           warehouseName: req.session.warehouseName
         });
       } else {
-        res.send(⁠ Not enough stock. Available: ${quantity}, Requested: ${q} ⁠);
+        res.send(⁠`Not enough stock. Available: ${quantity}, Requested: ${q}⁠`);
       }
 
     } else {
-      res.send(⁠ ❌ Product "${productName}" not found. ⁠);
+      res.send(`⁠❌ Product "${productName}" not found.`);
     }
   } catch (err) {
     console.error("Error retrieving or updating product:", err);
